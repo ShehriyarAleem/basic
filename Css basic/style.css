@@ -1,0 +1,28 @@
+/*basic selectors*/
+p {
+  color: green;
+}
+#second {
+  font-size: 30px;
+}
+.pg {
+  color: red;
+}
+/* Descendant (Space) */
+section p {
+  text-decoration: line-through;
+}
+
+/* psudo- element selector*/
+p::first-letter {
+  color: purple;
+  font-size: 30px;
+}
+/* psudo - class selector*/
+a:hover {
+  color: red;
+  font-size: 45px;
+}
+p:nth-child(odd) {
+  color: rgb(153, 0, 255);
+}

@@ -1,0 +1,25 @@
+body {
+  font-size: 45px;
+}
+.Parent {
+  background-color: rgb(0, 255, 115);
+  padding: 100px 20px 100px 20px;
+  min-height: 60vh;
+  gap: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+.Parent div {
+  background-color: #b63b8d;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Parent div:nth-child(even) {
+  background-color: bisque;
+}

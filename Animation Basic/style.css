@@ -1,0 +1,65 @@
+.container {
+  background-color: aqua;
+  width: 80%;
+  margin: auto;
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.parent {
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 5s infinite linear reverse;
+}
+
+.ball {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(white, red);
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50px;
+  top: 50px;
+
+  animation: circle 5s infinite linear;
+}
+
+@keyframes circle {
+  0% {
+    left: 50px;
+    top: 50px;
+  }
+
+  25% {
+    left: 70vh;
+    top: 50px;
+  }
+
+  75% {
+    left: 70vh;
+    top: 70px;
+  }
+
+  100% {
+    left: 70vh;
+    top: 50px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    transform: rotate(100deg);
+  }
+}
